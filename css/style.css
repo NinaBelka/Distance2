@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'San Francisco Pro';
+  src: local('San Francisco Pro Display Regular'), local('San-Francisco-Pro-Display-Regular'),
+    url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+    url('../fonts/SFProDisplay-Regular.woff') format('woff'),
+    url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro';
+  src: local('San Francisco Pro Display Semibold'), local('San-Francisco-Pro-Display-Semibold'),
+    url('../fonts/SFProDisplay-Semibold.woff2') format('woff2'),
+    url('../fonts/SFProDisplay-Semibold.woff') format('woff'),
+    url('../fonts/SFProDisplay-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'San Francisco Pro', 'sans-serif';
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+/* header */
+.header {
+  background-color: #0050B3;
+  padding: 8px 0;
+  box-shadow: (0px 2px 8px rgba(0, 0, 0, 0.15));
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.search-input {
+  width: 336px;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+  padding: 5px 30px 5px 12px;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  margin-right: 8px;
+}
+
+.user-name,
+.navigation-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-right: 12px;
+}
+
+.navigation-panel {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navigation-link:last-child {
+  margin-right: 0;
+}
+
+.navigation-link::before {
+  content: "";
+  width: 1px;
+  height: 16px;
+  background: #003A8C;
+  margin-right: 12px;
+}
+
+.navigation-link:last-child::after {
+  content: "";
+  width: 1px;
+  height: 16px;
+  background: #003A8C;
+  margin-left: 12px;
+}
+
+.icons-panel {
+  display: flex;
+  align-items: center;
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 12px;
+}
+
+.header-icon {
+  fill: #002766;
+}
+
+.header-icon:hover {
+  fill: #FFFFFF;
+}
+
+.icon-link:last-child::before {
+  content: "";
+  width: 1px;
+  height: 16px;
+  background: #003A8C;
+  margin-right: 12px;
+}
